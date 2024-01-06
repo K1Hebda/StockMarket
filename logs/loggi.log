@@ -1,0 +1,12 @@
+15:34:45.120 [main] INFO  application.Log4jClass - Click successfull
+15:34:45.124 [main] ERROR application.Log4jClass - DB conection failed
+15:34:45.124 [main] DEBUG application.Log4jClass - this os debug
+15:41:40.651 [main] INFO  application.Log4jClass - Click successfull
+15:41:40.655 [main] ERROR application.Log4jClass - DB conection failed
+15:41:40.655 [main] DEBUG application.Log4jClass - this os debug
+15:41:42.947 [main] INFO  application.Log4jClass - Click successfull
+15:41:42.950 [main] ERROR application.Log4jClass - DB conection failed
+15:41:42.951 [main] DEBUG application.Log4jClass - this os debug
+15:41:46.202 [main] INFO  application.Log4jClass - Click successfull
+15:41:46.206 [main] ERROR application.Log4jClass - DB conection failed
+15:41:46.213 [main] DEBUG application.Log4jClass - this os debug
