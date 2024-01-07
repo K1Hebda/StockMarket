@@ -10,3 +10,113 @@
 15:41:46.202 [main] INFO  application.Log4jClass - Click successfull
 15:41:46.206 [main] ERROR application.Log4jClass - DB conection failed
 15:41:46.213 [main] DEBUG application.Log4jClass - this os debug
+17:27:34.835 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+17:29:38.428 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+17:34:24.200 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+17:34:54.967 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+17:37:41.727 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+17:38:25.570 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+17:38:36.947 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+17:50:16.856 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+17:50:51.911 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+17:52:44.255 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+17:55:18.007 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+17:56:26.109 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+18:02:54.512 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+18:02:54.691 [JavaFX Application Thread] ERROR application.Main - Błąd GUI
+java.lang.IllegalArgumentException: Invalid URL: Invalid URL or resource not found
+	at javafx.graphics/javafx.scene.image.Image.validateUrl(Image.java:1130) ~[javafx.graphics.jar:?]
+	at javafx.graphics/javafx.scene.image.Image.<init>(Image.java:624) ~[javafx.graphics.jar:?]
+	at application.Main.start(Main.java:39) ~[bin/:?]
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:847) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:484) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:457) ~[javafx.graphics.jar:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399) ~[?:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:456) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184) ~[javafx.graphics.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid URL or resource not found
+	at javafx.graphics/javafx.scene.image.Image.validateUrl(Image.java:1119) ~[javafx.graphics.jar:?]
+	... 11 more
+18:03:48.109 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+18:03:48.289 [JavaFX Application Thread] ERROR application.Main - Błąd GUI
+java.lang.IllegalArgumentException: Invalid URL: Invalid URL or resource not found
+	at javafx.graphics/javafx.scene.image.Image.validateUrl(Image.java:1130) ~[javafx.graphics.jar:?]
+	at javafx.graphics/javafx.scene.image.Image.<init>(Image.java:624) ~[javafx.graphics.jar:?]
+	at application.Main.start(Main.java:39) ~[bin/:?]
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:847) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:484) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:457) ~[javafx.graphics.jar:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399) ~[?:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:456) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184) ~[javafx.graphics.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid URL or resource not found
+	at javafx.graphics/javafx.scene.image.Image.validateUrl(Image.java:1119) ~[javafx.graphics.jar:?]
+	... 11 more
+18:04:04.813 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+18:04:28.508 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+19:39:33.980 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+19:46:50.873 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+01:56:16.958 [main] INFO  application.BankScraper - Using BankScraper
+01:56:16.963 [main] INFO  application.BankScraper - Connecting to the URL...
+01:56:17.778 [main] INFO  application.BankScraper - Connection successful!
+01:56:17.795 [main] INFO  application.BankScraper - Iterating through table rows
+01:56:17.799 [main] INFO  application.BankScraper - End of iterating through table rows.
+01:56:17.805 [main] INFO  application.BankScraper - End of Using BankScraper
+02:02:09.592 [main] INFO  application.BankScraper - Using BankScraper
+02:02:09.596 [main] INFO  application.BankScraper - Connecting to the URL...
+02:02:10.453 [main] INFO  application.BankScraper - Connection successful!
+02:02:10.470 [main] WARN  application.BankScraper - Iterating through table rows
+02:02:10.475 [main] INFO  application.BankScraper - End of iterating through table rows.
+02:02:10.481 [main] INFO  application.BankScraper - End of Using BankScraper
+02:09:16.130 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+02:09:17.742 [JavaFX Application Thread] INFO  application.Main - End GUI
+02:15:13.761 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+02:15:14.405 [JavaFX Application Thread] INFO  application.Main - End GUI
+02:15:29.512 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+02:15:30.160 [JavaFX Application Thread] INFO  application.Main - End GUI
+02:16:37.064 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+02:16:37.718 [JavaFX Application Thread] INFO  application.Main - End GUI
+02:16:59.261 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+02:16:59.738 [JavaFX Application Thread] INFO  application.Main - End GUI
+02:50:47.761 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+02:50:48.178 [JavaFX Application Thread] INFO  application.Main - End GUI
+02:53:55.289 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+02:53:55.640 [JavaFX Application Thread] INFO  application.Main - End GUI
+02:54:29.552 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+02:54:29.899 [JavaFX Application Thread] INFO  application.Main - End GUI
+02:57:08.626 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+02:57:08.987 [JavaFX Application Thread] INFO  application.Main - End GUI
+02:57:15.804 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+02:57:16.148 [JavaFX Application Thread] INFO  application.Main - End GUI
+02:57:49.763 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+02:57:50.115 [JavaFX Application Thread] INFO  application.Main - End GUI
+02:58:14.342 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+02:58:14.681 [JavaFX Application Thread] INFO  application.Main - End GUI
+03:11:16.412 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+03:11:16.982 [JavaFX Application Thread] INFO  application.Main - End GUI
+03:24:10.046 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+03:24:10.400 [JavaFX Application Thread] INFO  application.Main - End GUI
+03:24:41.973 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+03:24:42.275 [JavaFX Application Thread] INFO  application.Main - End GUI
+03:25:37.352 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+03:25:37.674 [JavaFX Application Thread] INFO  application.Main - End GUI
+15:21:05.771 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+15:21:06.932 [JavaFX Application Thread] INFO  application.Main - End GUI
+15:21:38.739 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+15:21:39.242 [JavaFX Application Thread] INFO  application.Main - End GUI
+15:24:44.663 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+15:24:45.197 [JavaFX Application Thread] INFO  application.Main - End GUI
+15:25:24.030 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+15:25:24.567 [JavaFX Application Thread] INFO  application.Main - End GUI
+15:26:37.261 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+15:26:37.783 [JavaFX Application Thread] INFO  application.Main - End GUI
+15:27:10.332 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+15:27:10.870 [JavaFX Application Thread] INFO  application.Main - End GUI
+15:29:16.455 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+15:29:16.986 [JavaFX Application Thread] INFO  application.Main - End GUI
