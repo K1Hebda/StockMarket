@@ -120,3 +120,982 @@ Caused by: java.lang.IllegalArgumentException: Invalid URL or resource not found
 15:27:10.870 [JavaFX Application Thread] INFO  application.Main - End GUI
 15:29:16.455 [JavaFX Application Thread] INFO  application.Main - Start GUI 
 15:29:16.986 [JavaFX Application Thread] INFO  application.Main - End GUI
+21:26:56.097 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+21:26:56.782 [JavaFX Application Thread] INFO  application.Main - End GUI
+21:30:53.408 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+21:30:54.057 [JavaFX Application Thread] INFO  application.Main - End GUI
+21:31:13.217 [main] INFO  application.BankScraper - Using BankScraper
+21:31:13.221 [main] INFO  application.BankScraper - Connecting to the URL...
+21:31:14.049 [main] INFO  application.BankScraper - Connection successful!
+21:31:14.065 [main] WARN  application.BankScraper - Iterating through table rows
+21:31:14.071 [main] INFO  application.BankScraper - End of iterating through table rows.
+21:31:14.077 [main] INFO  application.BankScraper - End of Using BankScraper
+22:13:40.300 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+22:13:41.490 [JavaFX Application Thread] INFO  application.Main - End GUI
+22:14:07.171 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+22:14:07.512 [JavaFX Application Thread] INFO  application.Main - End GUI
+22:19:12.326 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+22:19:12.475 [JavaFX Application Thread] ERROR application.Main - Błąd GUI
+javafx.fxml.LoadException: 
+/C:/Users/kamil/eclipse-workspace/stockMarket/bin/application/Main.fxml
+
+	at javafx.fxml/javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2714) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2684) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2555) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3368) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3324) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3292) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3264) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3240) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:3233) ~[javafx.fxml.jar:?]
+	at application.Main.start(Main.java:29) ~[bin/:?]
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:847) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:484) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:457) ~[javafx.graphics.jar:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399) ~[?:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:456) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184) ~[javafx.graphics.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77) ~[javafx.base.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at javafx.base/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275) ~[javafx.base.jar:?]
+	at javafx.fxml/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2680) ~[javafx.fxml.jar:?]
+	... 17 more
+Caused by: java.lang.NullPointerException: Cannot invoke "javafx.scene.control.TableColumn.setCellValueFactory(javafx.util.Callback)" because "this.imie" is null
+	at application.SceneController.initialize(SceneController.java:30) ~[bin/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77) ~[javafx.base.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at javafx.base/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275) ~[javafx.base.jar:?]
+	at javafx.fxml/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2680) ~[javafx.fxml.jar:?]
+	... 17 more
+22:19:12.486 [JavaFX Application Thread] INFO  application.Main - End GUI
+22:22:32.632 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+22:22:32.653 [JavaFX Application Thread] ERROR application.Main - Błąd GUI
+javafx.fxml.LoadException: 
+/C:/Users/kamil/eclipse-workspace/stockMarket/bin/application/Main.fxml:10
+
+	at javafx.fxml/javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2714) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:944) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(FXMLLoader.java:981) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader$Element.processStartElement(FXMLLoader.java:230) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:755) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2845) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2641) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2555) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3368) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3324) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3292) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3264) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3240) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:3233) ~[javafx.fxml.jar:?]
+	at application.Main.start(Main.java:29) ~[bin/:?]
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:847) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:484) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:457) ~[javafx.graphics.jar:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399) ~[?:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:456) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184) ~[javafx.graphics.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:939) ~[javafx.fxml.jar:?]
+	... 22 more
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+	at application.SceneController.<init>(SceneController.java:39) ~[bin/:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:939) ~[javafx.fxml.jar:?]
+	... 22 more
+22:22:32.664 [JavaFX Application Thread] INFO  application.Main - End GUI
+22:22:53.677 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+22:22:53.706 [JavaFX Application Thread] ERROR application.Main - Błąd GUI
+javafx.fxml.LoadException: 
+/C:/Users/kamil/eclipse-workspace/stockMarket/bin/application/Main.fxml:10
+
+	at javafx.fxml/javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2714) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:944) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(FXMLLoader.java:981) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader$Element.processStartElement(FXMLLoader.java:230) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:755) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2845) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2641) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2555) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3368) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3324) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3292) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3264) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3240) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:3233) ~[javafx.fxml.jar:?]
+	at application.Main.start(Main.java:29) ~[bin/:?]
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:847) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:484) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:457) ~[javafx.graphics.jar:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399) ~[?:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:456) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184) ~[javafx.graphics.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:939) ~[javafx.fxml.jar:?]
+	... 22 more
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+	at application.SceneController.<init>(SceneController.java:39) ~[bin/:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:939) ~[javafx.fxml.jar:?]
+	... 22 more
+22:22:53.721 [JavaFX Application Thread] INFO  application.Main - End GUI
+22:27:12.100 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+22:27:12.281 [JavaFX Application Thread] ERROR application.Main - Błąd GUI
+javafx.fxml.LoadException: 
+/C:/Users/kamil/eclipse-workspace/stockMarket/bin/application/Main.fxml
+
+	at javafx.fxml/javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2714) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2684) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2555) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3368) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3324) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3292) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3264) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3240) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:3233) ~[javafx.fxml.jar:?]
+	at application.Main.start(Main.java:29) ~[bin/:?]
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:847) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:484) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:457) ~[javafx.graphics.jar:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399) ~[?:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:456) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184) ~[javafx.graphics.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77) ~[javafx.base.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at javafx.base/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275) ~[javafx.base.jar:?]
+	at javafx.fxml/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2680) ~[javafx.fxml.jar:?]
+	... 17 more
+Caused by: java.lang.NullPointerException: Cannot invoke "javafx.scene.control.TableColumn.setCellValueFactory(javafx.util.Callback)" because "this.imie" is null
+	at application.SceneController.initialize(SceneController.java:30) ~[bin/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77) ~[javafx.base.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at javafx.base/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275) ~[javafx.base.jar:?]
+	at javafx.fxml/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2680) ~[javafx.fxml.jar:?]
+	... 17 more
+22:27:12.293 [JavaFX Application Thread] INFO  application.Main - End GUI
+22:34:28.962 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+22:34:29.291 [JavaFX Application Thread] INFO  application.Main - End GUI
+22:50:45.329 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+22:50:45.641 [JavaFX Application Thread] INFO  application.Main - End GUI
+23:25:29.672 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+23:25:30.039 [JavaFX Application Thread] INFO  application.Main - End GUI
+23:25:40.425 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+23:25:40.785 [JavaFX Application Thread] INFO  application.Main - End GUI
+23:26:23.067 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+23:26:23.415 [JavaFX Application Thread] INFO  application.Main - End GUI
+23:26:43.146 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+23:26:43.539 [JavaFX Application Thread] INFO  application.Main - End GUI
+23:27:09.682 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+23:27:10.037 [JavaFX Application Thread] INFO  application.Main - End GUI
+23:27:55.217 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+23:27:55.535 [JavaFX Application Thread] INFO  application.Main - End GUI
+23:29:37.327 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+23:29:37.668 [JavaFX Application Thread] INFO  application.Main - End GUI
+23:30:00.279 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+23:30:00.633 [JavaFX Application Thread] INFO  application.Main - End GUI
+23:32:22.173 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+23:32:22.558 [JavaFX Application Thread] INFO  application.Main - End GUI
+23:32:45.310 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+23:32:45.704 [JavaFX Application Thread] INFO  application.Main - End GUI
+23:34:45.777 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+23:34:46.137 [JavaFX Application Thread] INFO  application.Main - End GUI
+23:37:57.930 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+23:37:58.262 [JavaFX Application Thread] INFO  application.Main - End GUI
+23:38:00.026 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+23:38:00.026 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+23:38:00.527 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+23:38:00.537 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+23:38:00.540 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+23:38:00.543 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+23:38:30.849 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+23:38:30.849 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+23:38:30.992 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+23:38:30.993 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+23:38:30.994 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+23:38:30.998 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+23:41:14.184 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+23:41:14.522 [JavaFX Application Thread] INFO  application.Main - End GUI
+23:41:16.172 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+23:41:16.172 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+23:41:16.671 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+23:41:16.681 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+23:41:16.683 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+23:41:16.686 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+23:41:20.011 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+23:41:20.011 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+23:41:20.149 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+23:41:20.150 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+23:41:20.151 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+23:41:20.153 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+23:42:02.996 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+23:42:03.330 [JavaFX Application Thread] INFO  application.Main - End GUI
+23:42:04.448 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+23:42:04.448 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+23:42:04.988 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+23:42:04.998 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+23:42:05.000 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+23:42:05.004 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+23:42:49.766 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+23:42:50.098 [JavaFX Application Thread] INFO  application.Main - End GUI
+23:42:54.640 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+23:42:54.641 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+23:42:55.095 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+23:42:55.103 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+23:42:55.107 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+23:42:55.110 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+23:43:14.613 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+23:43:14.991 [JavaFX Application Thread] INFO  application.Main - End GUI
+23:43:17.132 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+23:43:17.132 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+23:43:17.620 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+23:43:17.631 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+23:43:17.634 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+23:43:17.636 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+23:53:20.102 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+23:53:20.431 [JavaFX Application Thread] INFO  application.Main - End GUI
+23:53:34.410 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+23:53:34.730 [JavaFX Application Thread] INFO  application.Main - End GUI
+23:55:14.081 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+23:55:14.409 [JavaFX Application Thread] INFO  application.Main - End GUI
+00:00:11.876 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+00:00:12.213 [JavaFX Application Thread] INFO  application.Main - End GUI
+00:00:13.412 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+00:00:13.412 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+00:00:13.969 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+00:00:13.979 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+00:00:13.982 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+00:00:13.984 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+00:03:15.870 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+00:03:16.261 [JavaFX Application Thread] INFO  application.Main - End GUI
+00:03:17.874 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+00:03:17.875 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+00:03:18.427 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+00:03:18.437 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+00:03:18.439 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+00:03:18.442 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+00:05:37.037 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+00:05:37.361 [JavaFX Application Thread] INFO  application.Main - End GUI
+00:05:39.255 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+00:05:39.256 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+00:05:39.863 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+00:05:39.875 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+00:05:39.877 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+00:05:39.879 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+00:06:41.454 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+00:06:41.780 [JavaFX Application Thread] INFO  application.Main - End GUI
+00:06:43.053 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+00:06:43.053 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+00:06:43.522 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+00:06:43.531 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+00:06:43.533 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+00:06:43.536 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+00:10:03.204 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+00:10:03.522 [JavaFX Application Thread] INFO  application.Main - End GUI
+00:10:04.931 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+00:10:04.931 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+00:10:05.399 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+00:10:05.409 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+00:10:05.412 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+00:10:05.414 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+00:12:44.789 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+00:12:45.143 [JavaFX Application Thread] INFO  application.Main - End GUI
+00:12:46.276 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+00:12:46.276 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+00:12:46.753 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+00:12:46.763 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+00:12:46.766 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+00:12:46.769 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+00:23:48.163 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+00:23:48.506 [JavaFX Application Thread] INFO  application.Main - End GUI
+00:23:53.793 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+00:23:53.793 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+00:23:54.288 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+00:23:54.298 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+00:23:54.301 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+00:23:54.304 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+00:31:52.378 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+00:31:52.710 [JavaFX Application Thread] INFO  application.Main - End GUI
+00:31:56.371 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+00:31:56.371 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+00:31:56.836 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+00:31:56.844 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+00:31:56.847 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+00:31:56.850 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+00:33:09.473 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+00:33:09.835 [JavaFX Application Thread] INFO  application.Main - End GUI
+00:33:10.960 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+00:33:10.960 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+00:33:11.434 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+00:33:11.443 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+00:33:11.446 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+00:33:11.449 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+00:34:27.271 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+00:34:27.655 [JavaFX Application Thread] INFO  application.Main - End GUI
+00:34:28.555 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+00:34:28.555 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+00:34:29.044 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+00:34:29.053 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+00:34:29.060 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+00:34:29.070 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+00:48:24.765 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+00:48:25.160 [JavaFX Application Thread] INFO  application.Main - End GUI
+00:48:26.745 [JavaFX Application Thread] INFO  application.Main - Switching to WIG20 scene
+00:48:26.789 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+00:48:26.792 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+00:48:27.403 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+00:48:27.414 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+00:48:27.417 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+00:48:27.419 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+00:48:27.419 [JavaFX Application Thread] WARN  application.Main - getting data to table
+00:48:27.421 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:48:27.422 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:48:27.423 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:48:27.423 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:48:27.423 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:48:27.423 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:48:27.423 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:48:27.423 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:48:27.423 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:48:27.423 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:48:27.423 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:48:27.423 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:48:27.423 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:48:27.424 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:48:27.424 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:48:27.424 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:48:27.424 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:48:27.424 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:48:27.424 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:48:27.424 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:48:27.424 [JavaFX Application Thread] INFO  application.Main - end of getting data to column
+00:50:54.140 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+00:50:54.540 [JavaFX Application Thread] INFO  application.Main - End GUI
+00:50:58.319 [JavaFX Application Thread] INFO  application.Main - Switching to WIG20 scene
+00:50:58.363 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+00:50:58.368 [JavaFX Application Thread] DEBUG application.BankScraper - URL: https://www.bankier.pl/inwestowanie/profile/quote.html?symbol=WIG20
+00:50:58.368 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+00:50:58.834 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+00:50:58.842 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+00:50:58.845 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+00:50:58.845 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+00:50:58.845 [JavaFX Application Thread] WARN  application.Main - getting data to table
+00:50:58.848 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:50:58.848 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:50:58.849 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:50:58.849 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:50:58.850 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:50:58.850 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:50:58.850 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:50:58.850 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:50:58.850 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:50:58.850 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:50:58.850 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:50:58.850 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:50:58.851 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:50:58.851 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:50:58.851 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:50:58.851 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:50:58.851 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:50:58.851 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:50:58.851 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:50:58.851 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:50:58.851 [JavaFX Application Thread] INFO  application.Main - end of getting data to column
+00:55:29.554 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+00:55:29.886 [JavaFX Application Thread] INFO  application.Main - End GUI
+00:55:31.378 [JavaFX Application Thread] INFO  application.Main - Switching to WIG20 scene
+00:55:31.418 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+00:55:31.421 [JavaFX Application Thread] DEBUG application.BankScraper - URL: https://www.bankier.pl/inwestowanie/profile/quote.html?symbol=WIG20
+00:55:31.421 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+00:55:31.978 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+00:55:31.987 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+00:55:31.990 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+00:55:31.990 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+00:55:31.990 [JavaFX Application Thread] WARN  application.Main - getting data to table
+00:55:31.993 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:55:31.994 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:55:31.995 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:55:31.995 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:55:31.995 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:55:31.995 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:55:31.995 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:55:31.995 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:55:31.995 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:55:31.995 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:55:31.995 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:55:31.996 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:55:31.996 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:55:31.996 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:55:31.996 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:55:31.996 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:55:31.996 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:55:31.996 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:55:31.996 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:55:31.996 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:55:31.996 [JavaFX Application Thread] INFO  application.Main - end of getting data to column
+00:56:27.222 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+00:56:27.565 [JavaFX Application Thread] INFO  application.Main - End GUI
+00:56:28.207 [JavaFX Application Thread] INFO  application.Main - Switching to WIG20 scene
+00:56:28.248 [JavaFX Application Thread] WARN  application.Main - Fetching data for the table
+00:56:28.250 [JavaFX Application Thread] INFO  application.Main - End of fetching data for the table
+00:58:15.629 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+00:58:15.969 [JavaFX Application Thread] INFO  application.Main - End GUI
+00:58:17.447 [JavaFX Application Thread] INFO  application.Main - Switching to WIG20 scene
+00:58:17.485 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+00:58:17.490 [JavaFX Application Thread] DEBUG application.BankScraper - URL: https://www.bankier.pl/inwestowanie/profile/quote.html?symbol=WIG20
+00:58:17.490 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+00:58:18.086 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+00:58:18.094 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+00:58:18.096 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+00:58:18.096 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+00:58:18.097 [JavaFX Application Thread] WARN  application.Main - Fetching data for the table
+00:58:18.099 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:18.099 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@69c7ab5c
+00:58:18.099 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:18.099 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@43749c23
+00:58:18.100 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:18.101 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@5834c066
+00:58:18.101 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:18.101 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@5346fc2b
+00:58:18.101 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:18.101 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@5d8b5946
+00:58:18.101 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:18.101 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@2b5c1cfb
+00:58:18.101 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:18.101 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@5515de06
+00:58:18.101 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:18.101 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@3156d72b
+00:58:18.102 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:18.102 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@3690e92e
+00:58:18.102 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:18.102 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@7de090c3
+00:58:18.102 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:18.102 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@6fe8497
+00:58:18.102 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:18.102 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@116e4ec
+00:58:18.102 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:18.102 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@307ea479
+00:58:18.102 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:18.103 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@49e15c3d
+00:58:18.103 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:18.103 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@3bc9b3aa
+00:58:18.103 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:18.103 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@d4e11bb
+00:58:18.103 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:18.103 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@48562107
+00:58:18.103 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:18.103 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@b159c84
+00:58:18.103 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:18.103 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@7db72aaf
+00:58:18.104 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:18.104 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@93f6b
+00:58:18.104 [JavaFX Application Thread] INFO  application.Main - End of fetching data for the table
+00:58:43.371 [JavaFX Application Thread] INFO  application.Main - Switching to the Main scene
+00:58:43.371 [JavaFX Application Thread] DEBUG application.Main - Clearing ListOfCompanies
+00:58:46.935 [JavaFX Application Thread] INFO  application.Main - Switching to WIG20 scene
+00:58:46.942 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+00:58:46.942 [JavaFX Application Thread] DEBUG application.BankScraper - URL: https://www.bankier.pl/inwestowanie/profile/quote.html?symbol=WIG20
+00:58:46.942 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+00:58:47.075 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+00:58:47.076 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+00:58:47.077 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+00:58:47.077 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+00:58:47.077 [JavaFX Application Thread] WARN  application.Main - Fetching data for the table
+00:58:47.077 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:47.077 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@b39d924
+00:58:47.078 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:47.078 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@e87e027
+00:58:47.078 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:47.078 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@d68f570
+00:58:47.078 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:47.078 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@1a43818d
+00:58:47.078 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:47.078 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@5ff69b18
+00:58:47.078 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:47.078 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@6e41de19
+00:58:47.079 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:47.079 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@244875d4
+00:58:47.079 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:47.079 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@2281d739
+00:58:47.079 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:47.079 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@49c4b62a
+00:58:47.079 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:47.079 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@2995081d
+00:58:47.079 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:47.079 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@4e143e2e
+00:58:47.079 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:47.079 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@628010ca
+00:58:47.079 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:47.079 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@e199f56
+00:58:47.081 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:47.081 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@f4dab68
+00:58:47.081 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:47.081 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@604711e1
+00:58:47.081 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:47.081 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@2a35b63
+00:58:47.081 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:47.081 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@4082874e
+00:58:47.081 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:47.081 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@227672dd
+00:58:47.081 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:47.082 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@7ae6b76b
+00:58:47.082 [JavaFX Application Thread] INFO  application.Main - Saving data in DataColumn
+00:58:47.082 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@62069317
+00:58:47.082 [JavaFX Application Thread] INFO  application.Main - End of fetching data for the table
+01:06:34.520 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+01:06:34.877 [JavaFX Application Thread] INFO  application.Main - End GUI
+01:06:36.748 [JavaFX Application Thread] INFO  application.Main - Switching to WIG20 scene
+01:06:36.788 [JavaFX Application Thread] ERROR application.Main - Switching to WIG20 scene error 
+javafx.fxml.LoadException: 
+/C:/Users/kamil/eclipse-workspace/stockMarket/bin/application/WIG20.fxml
+
+	at javafx.fxml/javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2714) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2684) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2555) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3368) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3324) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3292) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3264) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3240) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:3233) ~[javafx.fxml.jar:?]
+	at application.SceneController.switchToWIG20(SceneController.java:25) ~[bin/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77) ~[javafx.base.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at javafx.base/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275) ~[javafx.base.jar:?]
+	at javafx.fxml/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1852) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724) ~[javafx.fxml.jar:?]
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86) ~[javafx.base.jar:?]
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234) ~[javafx.base.jar:?]
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) ~[javafx.base.jar:?]
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[javafx.base.jar:?]
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[javafx.base.jar:?]
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx.base.jar:?]
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx.base.jar:?]
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx.base.jar:?]
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx.base.jar:?]
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx.base.jar:?]
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[javafx.base.jar:?]
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49) ~[javafx.base.jar:?]
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198) ~[javafx.base.jar:?]
+	at javafx.graphics/javafx.scene.Node.fireEvent(Node.java:8792) ~[javafx.graphics.jar:?]
+	at javafx.controls/javafx.scene.control.Button.fire(Button.java:203) ~[javafx.controls.jar:?]
+	at javafx.controls/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:208) ~[javafx.controls.jar:?]
+	at javafx.controls/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274) ~[javafx.controls.jar:?]
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247) ~[javafx.base.jar:?]
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80) ~[javafx.base.jar:?]
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234) ~[javafx.base.jar:?]
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) ~[javafx.base.jar:?]
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[javafx.base.jar:?]
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[javafx.base.jar:?]
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx.base.jar:?]
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx.base.jar:?]
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx.base.jar:?]
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx.base.jar:?]
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx.base.jar:?]
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[javafx.base.jar:?]
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54) ~[javafx.base.jar:?]
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198) ~[javafx.base.jar:?]
+	at javafx.graphics/javafx.scene.Scene$MouseHandler.process(Scene.java:3897) ~[javafx.graphics.jar:?]
+	at javafx.graphics/javafx.scene.Scene.processMouseEvent(Scene.java:1878) ~[javafx.graphics.jar:?]
+	at javafx.graphics/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2623) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301) ~[javafx.graphics.jar:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399) ~[?:?]
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.View.handleMouseEvent(View.java:557) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.View.notifyMouse(View.java:943) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184) ~[javafx.graphics.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77) ~[javafx.base.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at javafx.base/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275) ~[javafx.base.jar:?]
+	at javafx.fxml/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2680) ~[javafx.fxml.jar:?]
+	... 65 more
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The method procentageChangeProperty() is undefined for the type DataColumn
+
+	at application.Wig20Controller.initialize(Wig20Controller.java:64) ~[bin/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77) ~[javafx.base.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at javafx.base/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275) ~[javafx.base.jar:?]
+	at javafx.fxml/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84) ~[javafx.fxml.jar:?]
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2680) ~[javafx.fxml.jar:?]
+	... 65 more
+01:06:46.977 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+01:06:47.320 [JavaFX Application Thread] INFO  application.Main - End GUI
+01:06:48.516 [JavaFX Application Thread] INFO  application.Main - Switching to WIG20 scene
+01:06:48.556 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+01:06:48.560 [JavaFX Application Thread] DEBUG application.BankScraper - URL: https://www.bankier.pl/inwestowanie/profile/quote.html?symbol=WIG20
+01:06:48.560 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+01:06:49.137 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+01:06:49.147 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+01:06:49.149 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+01:06:49.149 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+01:06:49.149 [JavaFX Application Thread] WARN  application.Main - Fetching data for the table
+01:06:49.152 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@64986a5e
+01:06:49.152 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@4dfd55ad
+01:06:49.153 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@43749c23
+01:06:49.154 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@663de148
+01:06:49.154 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@56c12336
+01:06:49.154 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@208fff9
+01:06:49.154 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@657aee1f
+01:06:49.154 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@6cc46459
+01:06:49.154 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@33432264
+01:06:49.154 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@76f1e4c2
+01:06:49.154 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@44c9f615
+01:06:49.155 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@b60b479
+01:06:49.155 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@211ae773
+01:06:49.155 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@5834c066
+01:06:49.155 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@5346fc2b
+01:06:49.155 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@5d8b5946
+01:06:49.155 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@2b5c1cfb
+01:06:49.155 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@5515de06
+01:06:49.155 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@3156d72b
+01:06:49.155 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@3690e92e
+01:06:49.156 [JavaFX Application Thread] INFO  application.Main - End of fetching data for the table
+01:11:58.368 [JavaFX Application Thread] INFO  application.Main - Start GUI 
+01:11:58.750 [JavaFX Application Thread] INFO  application.Main - End GUI
+01:12:01.516 [JavaFX Application Thread] INFO  application.Main - Switching to WIG20 scene
+01:12:01.577 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+01:12:01.580 [JavaFX Application Thread] DEBUG application.BankScraper - URL: https://www.bankier.pl/inwestowanie/profile/quote.html?symbol=WIG20
+01:12:01.580 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+01:12:02.285 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+01:12:02.295 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+01:12:02.298 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+01:12:02.298 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+01:12:02.298 [JavaFX Application Thread] WARN  application.Main - Fetching data for the table
+01:12:02.301 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@5315ea91
+01:12:02.301 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@5315ea91
+01:12:02.301 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@1eb13f03
+01:12:02.301 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@1eb13f03
+01:12:02.302 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@33432264
+01:12:02.302 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@33432264
+01:12:02.302 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@76f1e4c2
+01:12:02.302 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@76f1e4c2
+01:12:02.302 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@44c9f615
+01:12:02.303 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@44c9f615
+01:12:02.303 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@b60b479
+01:12:02.303 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@b60b479
+01:12:02.303 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@211ae773
+01:12:02.303 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@211ae773
+01:12:02.303 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@5834c066
+01:12:02.303 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@5834c066
+01:12:02.303 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@5346fc2b
+01:12:02.303 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@5346fc2b
+01:12:02.303 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@5d8b5946
+01:12:02.304 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@5d8b5946
+01:12:02.304 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@2b5c1cfb
+01:12:02.304 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@2b5c1cfb
+01:12:02.304 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@5515de06
+01:12:02.304 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@5515de06
+01:12:02.304 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@3156d72b
+01:12:02.304 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@3156d72b
+01:12:02.304 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@3690e92e
+01:12:02.304 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@3690e92e
+01:12:02.305 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@7de090c3
+01:12:02.305 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@7de090c3
+01:12:02.305 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@6fe8497
+01:12:02.305 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@6fe8497
+01:12:02.305 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@116e4ec
+01:12:02.305 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@116e4ec
+01:12:02.305 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@307ea479
+01:12:02.305 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@307ea479
+01:12:02.305 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@49e15c3d
+01:12:02.305 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@49e15c3d
+01:12:02.305 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@3bc9b3aa
+01:12:02.306 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@3bc9b3aa
+01:12:02.306 [JavaFX Application Thread] INFO  application.Main - End of fetching data for the table
+01:12:27.941 [JavaFX Application Thread] INFO  application.Main - Switching to the Main scene
+01:12:27.941 [JavaFX Application Thread] DEBUG application.Main - Clearing ListOfCompanies
+01:12:28.744 [JavaFX Application Thread] INFO  application.Main - Switching to WIG20 scene
+01:12:28.750 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+01:12:28.750 [JavaFX Application Thread] DEBUG application.BankScraper - URL: https://www.bankier.pl/inwestowanie/profile/quote.html?symbol=WIG20
+01:12:28.750 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+01:12:28.885 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+01:12:28.886 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+01:12:28.888 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+01:12:28.888 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+01:12:28.888 [JavaFX Application Thread] WARN  application.Main - Fetching data for the table
+01:12:28.888 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@444295af
+01:12:28.888 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@444295af
+01:12:28.888 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@2264f8f
+01:12:28.889 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@2264f8f
+01:12:28.889 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@65bfd99a
+01:12:28.889 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@65bfd99a
+01:12:28.889 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@29db4b5f
+01:12:28.889 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@29db4b5f
+01:12:28.889 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@79644c26
+01:12:28.889 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@79644c26
+01:12:28.889 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@490e2eb2
+01:12:28.889 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@490e2eb2
+01:12:28.889 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@52e65d00
+01:12:28.889 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@52e65d00
+01:12:28.889 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@219475b0
+01:12:28.889 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@219475b0
+01:12:28.889 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@7aca08d8
+01:12:28.889 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@7aca08d8
+01:12:28.889 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@4289c28d
+01:12:28.889 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@4289c28d
+01:12:28.890 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@22679981
+01:12:28.890 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@22679981
+01:12:28.890 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@20dc4188
+01:12:28.890 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@20dc4188
+01:12:28.890 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@a7a0183
+01:12:28.890 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@a7a0183
+01:12:28.890 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@6eb37eb
+01:12:28.890 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@6eb37eb
+01:12:28.890 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@18de0d26
+01:12:28.890 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@18de0d26
+01:12:28.890 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@5acccfb4
+01:12:28.890 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@5acccfb4
+01:12:28.890 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@60ab77
+01:12:28.890 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@60ab77
+01:12:28.891 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@5f6b80ff
+01:12:28.891 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@5f6b80ff
+01:12:28.891 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@37b41109
+01:12:28.891 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@37b41109
+01:12:28.891 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@b39d924
+01:12:28.891 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@b39d924
+01:12:28.891 [JavaFX Application Thread] INFO  application.Main - End of fetching data for the table
+01:12:29.849 [JavaFX Application Thread] INFO  application.Main - Switching to the Main scene
+01:12:29.849 [JavaFX Application Thread] DEBUG application.Main - Clearing ListOfCompanies
+01:12:30.448 [JavaFX Application Thread] INFO  application.Main - Switching to WIG20 scene
+01:12:30.454 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+01:12:30.454 [JavaFX Application Thread] DEBUG application.BankScraper - URL: https://www.bankier.pl/inwestowanie/profile/quote.html?symbol=WIG20
+01:12:30.455 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+01:12:30.638 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+01:12:30.638 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+01:12:30.640 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+01:12:30.640 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+01:12:30.640 [JavaFX Application Thread] WARN  application.Main - Fetching data for the table
+01:12:30.640 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@48989098
+01:12:30.640 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@48989098
+01:12:30.640 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@62de2db4
+01:12:30.640 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@62de2db4
+01:12:30.640 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@3cb2e5d0
+01:12:30.640 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@3cb2e5d0
+01:12:30.641 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@7ebcf8df
+01:12:30.641 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@7ebcf8df
+01:12:30.641 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@722cabc0
+01:12:30.641 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@722cabc0
+01:12:30.641 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@618c9bbc
+01:12:30.641 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@618c9bbc
+01:12:30.641 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@4abb6e38
+01:12:30.641 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@4abb6e38
+01:12:30.641 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@53d80db0
+01:12:30.642 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@53d80db0
+01:12:30.642 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@44bdcea0
+01:12:30.642 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@44bdcea0
+01:12:30.642 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@41e9fcf0
+01:12:30.642 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@41e9fcf0
+01:12:30.642 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@5032805b
+01:12:30.642 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@5032805b
+01:12:30.642 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@4394a260
+01:12:30.642 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@4394a260
+01:12:30.642 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@6976bc7c
+01:12:30.643 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@6976bc7c
+01:12:30.643 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@67f6d3de
+01:12:30.643 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@67f6d3de
+01:12:30.643 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@2382b723
+01:12:30.643 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@2382b723
+01:12:30.643 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@45639691
+01:12:30.643 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@45639691
+01:12:30.643 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@19aa571d
+01:12:30.643 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@19aa571d
+01:12:30.643 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@48131fd5
+01:12:30.643 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@48131fd5
+01:12:30.643 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@7e1e925b
+01:12:30.643 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@7e1e925b
+01:12:30.645 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@27904417
+01:12:30.645 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@27904417
+01:12:30.645 [JavaFX Application Thread] INFO  application.Main - End of fetching data for the table
+01:12:31.326 [JavaFX Application Thread] INFO  application.Main - Switching to the Main scene
+01:12:31.326 [JavaFX Application Thread] DEBUG application.Main - Clearing ListOfCompanies
+01:12:31.853 [JavaFX Application Thread] INFO  application.Main - Switching to WIG20 scene
+01:12:31.859 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+01:12:31.859 [JavaFX Application Thread] DEBUG application.BankScraper - URL: https://www.bankier.pl/inwestowanie/profile/quote.html?symbol=WIG20
+01:12:31.859 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+01:12:31.978 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+01:12:31.979 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+01:12:31.980 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+01:12:31.980 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+01:12:31.980 [JavaFX Application Thread] WARN  application.Main - Fetching data for the table
+01:12:31.980 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@5422d4e1
+01:12:31.980 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@5422d4e1
+01:12:31.980 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@190082e6
+01:12:31.981 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@190082e6
+01:12:31.981 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@13cfba1c
+01:12:31.981 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@13cfba1c
+01:12:31.981 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@4961861d
+01:12:31.981 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@4961861d
+01:12:31.981 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@ba6c60c
+01:12:31.981 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@ba6c60c
+01:12:31.981 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@16ac722c
+01:12:31.981 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@16ac722c
+01:12:31.981 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@785d25bf
+01:12:31.981 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@785d25bf
+01:12:31.981 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@3dc915c7
+01:12:31.981 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@3dc915c7
+01:12:31.982 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@e232d4
+01:12:31.982 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@e232d4
+01:12:31.982 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@752a1df6
+01:12:31.982 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@752a1df6
+01:12:31.982 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@64cbae31
+01:12:31.982 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@64cbae31
+01:12:31.982 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@1159e842
+01:12:31.982 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@1159e842
+01:12:31.982 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@3c1c2f
+01:12:31.982 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@3c1c2f
+01:12:31.982 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@255c6473
+01:12:31.982 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@255c6473
+01:12:31.982 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@1cdffccf
+01:12:31.982 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@1cdffccf
+01:12:31.982 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@429a1cee
+01:12:31.982 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@429a1cee
+01:12:31.982 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@2227adf6
+01:12:31.982 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@2227adf6
+01:12:31.982 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@649e2a3d
+01:12:31.983 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@649e2a3d
+01:12:31.983 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@7448be5
+01:12:31.983 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@7448be5
+01:12:31.983 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@15ab9a8f
+01:12:31.983 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@15ab9a8f
+01:12:31.983 [JavaFX Application Thread] INFO  application.Main - End of fetching data for the table
+01:12:35.288 [JavaFX Application Thread] INFO  application.Main - Switching to the Main scene
+01:12:35.288 [JavaFX Application Thread] DEBUG application.Main - Clearing ListOfCompanies
+01:12:35.880 [JavaFX Application Thread] INFO  application.Main - Switching to WIG20 scene
+01:12:35.883 [JavaFX Application Thread] INFO  application.BankScraper - Using BankScraper
+01:12:35.883 [JavaFX Application Thread] DEBUG application.BankScraper - URL: https://www.bankier.pl/inwestowanie/profile/quote.html?symbol=WIG20
+01:12:35.883 [JavaFX Application Thread] INFO  application.BankScraper - Connecting to the URL...
+01:12:36.005 [JavaFX Application Thread] INFO  application.BankScraper - Connection successful!
+01:12:36.005 [JavaFX Application Thread] WARN  application.BankScraper - Iterating through table rows
+01:12:36.006 [JavaFX Application Thread] INFO  application.BankScraper - End of iterating through table rows.
+01:12:36.006 [JavaFX Application Thread] INFO  application.BankScraper - End of Using BankScraper
+01:12:36.006 [JavaFX Application Thread] WARN  application.Main - Fetching data for the table
+01:12:36.006 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@152e8d84
+01:12:36.006 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@152e8d84
+01:12:36.006 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@373c4524
+01:12:36.006 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@373c4524
+01:12:36.007 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@4a67ee6e
+01:12:36.007 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@4a67ee6e
+01:12:36.007 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@705e6b56
+01:12:36.007 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@705e6b56
+01:12:36.007 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@117d8a74
+01:12:36.007 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@117d8a74
+01:12:36.007 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@44bdf81a
+01:12:36.007 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@44bdf81a
+01:12:36.008 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@315c6a7d
+01:12:36.008 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@315c6a7d
+01:12:36.008 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@32dbb3db
+01:12:36.008 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@32dbb3db
+01:12:36.008 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@4f08a1de
+01:12:36.008 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@4f08a1de
+01:12:36.008 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@645efd0d
+01:12:36.008 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@645efd0d
+01:12:36.008 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@36837c79
+01:12:36.009 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@36837c79
+01:12:36.009 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@59a94419
+01:12:36.009 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@59a94419
+01:12:36.009 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@53a508a3
+01:12:36.009 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@53a508a3
+01:12:36.009 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@4080314f
+01:12:36.009 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@4080314f
+01:12:36.009 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@6d4ded92
+01:12:36.009 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@6d4ded92
+01:12:36.009 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@7e57f5ae
+01:12:36.011 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@7e57f5ae
+01:12:36.011 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@54c0ad7
+01:12:36.011 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@54c0ad7
+01:12:36.011 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@44075978
+01:12:36.011 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@44075978
+01:12:36.011 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@46a41d17
+01:12:36.011 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@46a41d17
+01:12:36.011 [JavaFX Application Thread] DEBUG application.Main - Created DataColumn: application.DataColumn@79f6ae8
+01:12:36.011 [JavaFX Application Thread] DEBUG application.Main - Adding row to TableView: application.DataColumn@79f6ae8
+01:12:36.011 [JavaFX Application Thread] INFO  application.Main - End of fetching data for the table
