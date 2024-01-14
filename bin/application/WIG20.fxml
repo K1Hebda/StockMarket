@@ -15,13 +15,14 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1294.0" prefWidth="1214.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Wig20Controller">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1417.0" prefWidth="1214.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Wig20Controller">
 	<content>
-		<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1294.0" prefWidth="1215.0">
+		<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1402.0" prefWidth="1215.0">
 			<children>
 				<Rectangle arcHeight="5.0" arcWidth="5.0" height="2000.0" layoutX="-8.0" layoutY="-437.0" stroke="BLACK" strokeType="INSIDE" width="204.0">
 					<fill>
@@ -41,7 +42,7 @@
 						</LinearGradient>
 					</fill>
 				</Rectangle>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="454.0" layoutX="753.0" layoutY="87.0" stroke="BLACK" strokeType="INSIDE" width="448.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="454.0" layoutX="209.0" layoutY="87.0" stroke="BLACK" strokeType="INSIDE" width="992.0" />
 				<Rectangle arcHeight="5.0" arcWidth="5.0" height="63.0" layoutX="14.0" layoutY="55.0" stroke="BLACK" strokeType="INSIDE" width="175.0">
 					<fill>
 						<LinearGradient cycleMethod="REPEAT" endX="1.0" endY="1.0" startY="1.0">
@@ -84,7 +85,7 @@
 						<Font name="System Bold" size="36.0" />
 					</font>
 				</Label>
-				<TextArea fx:id="outputTextArea1" focusTraversable="false" layoutX="775.0" layoutY="170.0" prefHeight="354.0" prefWidth="207.0" text="&#10;">
+				<TextArea fx:id="outputTextArea1" focusTraversable="false" layoutX="743.0" layoutY="170.0" prefHeight="354.0" prefWidth="207.0" text="&#10;">
 					<font>
 						<Font name="System Bold" size="18.0" />
 					</font>
@@ -100,7 +101,7 @@
 						<Font name="System Bold" size="24.0" />
 					</font>
 				</Label>
-				<AreaChart fx:id="wig20Chart" layoutX="196.0" layoutY="88.0" prefHeight="453.0" prefWidth="557.0" style="-fx-background-color: #F2F2F2;" title="Notowania historyczne WIG20 ">
+				<AreaChart fx:id="wig20Chart" layoutX="225.0" layoutY="169.0" prefHeight="355.0" prefWidth="528.0" style="-fx-background-color: #F2F2F2;">
 					<xAxis>
 						<CategoryAxis side="BOTTOM" fx:id="xAxis" />
 					</xAxis>
@@ -113,7 +114,7 @@
 						<Font name="System Bold" size="40.0" />
 					</font>
 				</Label>
-				<TextArea fx:id="outputTextArea2" focusTraversable="false" layoutX="982.0" layoutY="170.0" prefHeight="354.0" prefWidth="200.0">
+				<TextArea fx:id="outputTextArea2" focusTraversable="false" layoutX="950.0" layoutY="170.0" prefHeight="354.0" prefWidth="232.0">
 					<font>
 						<Font name="System Italic" size="18.0" />
 					</font>
@@ -124,12 +125,12 @@
 						-fx-control-inner-background: #EBEBEB; /* Dla pewności, dodatkowa właściwość */
 					</style>
 				</TextArea>
-            <Label layoutX="914.0" layoutY="98.0" text="WIG20">
+            <Label fx:id="companyNameLabel" alignment="CENTER" layoutX="209.0" layoutY="95.0" prefHeight="64.0" prefWidth="993.0" text="WIG20">
                <font>
                   <Font name="System Bold" size="43.0" />
                </font>
                <textFill>
-                  <LinearGradient endX="0.0710900473933649" endY="1.0">
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
                      <stops>
                         <Stop>
                            <color>
@@ -138,16 +139,16 @@
                         </Stop>
                         <Stop offset="1.0">
                            <color>
-                              <Color red="1.0" green="1.0" blue="1.0" />
+                              <Color red="0.16403508186340332" green="0.14912280440330505" blue="0.44736841320991516" />
                            </color>
                         </Stop>
                      </stops>
-                  </LinearGradient>
+                  </RadialGradient>
                </textFill>
             </Label>
-            <VBox layoutX="14.0" layoutY="118.0" prefHeight="1160.0" prefWidth="175.0">
+            <VBox layoutX="14.0" layoutY="118.0" prefHeight="1280.0" prefWidth="175.0">
                <children>
-      				<Button mnemonicParsing="false" prefHeight="64.0" prefWidth="193.0">
+      				<Button fx:id="alior" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="193.0">
       					<graphic>
       						<ImageView fitHeight="56.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
       							<image>
@@ -157,7 +158,7 @@
       					</graphic>
       				</Button>
       
-      				<Button mnemonicParsing="false" prefHeight="61.0" prefWidth="185.0">
+      				<Button fx:id="allegro" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="185.0">
       					<graphic>
       						<ImageView fitHeight="55.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
       							<image>
@@ -166,7 +167,7 @@
       						</ImageView>
       					</graphic>
       				</Button>
-      				<Button mnemonicParsing="false" prefHeight="67.0" prefWidth="191.0">
+      				<Button fx:id="asseco" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="67.0" prefWidth="191.0">
       					<graphic>
       						<ImageView fitHeight="40.0" fitWidth="139.0" pickOnBounds="true" preserveRatio="true">
       							<image>
@@ -175,7 +176,16 @@
       						</ImageView>
       					</graphic>
       				</Button>
-      				<Button mnemonicParsing="false" prefHeight="64.0" prefWidth="190.0">
+                  <Button fx:id="cdProjekt" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="185.0">
+                     <graphic>
+                        <ImageView fitHeight="55.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../resources/CD_Projekt_logo.svg.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+      				<Button fx:id="polsat" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="190.0">
       					<graphic>
       						<ImageView fitHeight="56.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
       							<image>
@@ -184,7 +194,7 @@
       						</ImageView>
       					</graphic>
       				</Button>
-      				<Button mnemonicParsing="false" prefHeight="64.0" prefWidth="219.0">
+      				<Button fx:id="dino" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="219.0">
       					<graphic>
       						<ImageView fitHeight="56.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
       							<image>
@@ -193,7 +203,7 @@
       						</ImageView>
       					</graphic>
       				</Button>
-      				<Button mnemonicParsing="false" prefHeight="64.0" prefWidth="195.0">
+      				<Button fx:id="jswaSA" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="195.0">
       					<graphic>
       						<ImageView fitHeight="56.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
       							<image>
@@ -202,7 +212,7 @@
       						</ImageView>
       					</graphic>
       				</Button>
-      				<Button mnemonicParsing="false" prefHeight="64.0" prefWidth="193.0">
+      				<Button fx:id="gk" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="193.0">
       					<graphic>
       						<ImageView fitHeight="56.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
       							<image>
@@ -211,7 +221,7 @@
       						</ImageView>
       					</graphic>
       				</Button>
-      				<Button mnemonicParsing="false" prefHeight="64.0" prefWidth="187.0">
+      				<Button fx:id="kghm" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="187.0">
       					<graphic>
       						<ImageView fitHeight="52.0" fitWidth="151.0" pickOnBounds="true" preserveRatio="true">
       							<image>
@@ -220,7 +230,7 @@
       						</ImageView>
       					</graphic>
       				</Button>
-      				<Button mnemonicParsing="false" prefHeight="64.0" prefWidth="204.0">
+      				<Button fx:id="kruk" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="204.0">
       					<graphic>
       						<ImageView fitHeight="49.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
       							<image>
@@ -229,7 +239,7 @@
       						</ImageView>
       					</graphic>
       				</Button>
-                  <Button mnemonicParsing="false" prefHeight="64.0" prefWidth="225.0">
+                  <Button fx:id="mbank" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="225.0">
                      <graphic>
                         <ImageView fitHeight="51.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -238,16 +248,16 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="64.0" prefWidth="225.0">
+                  <Button fx:id="orange" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="225.0">
                      <graphic>
-                        <ImageView fitHeight="56.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="48.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../resources/Orange.png" />
                            </image>
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="64.0" prefWidth="225.0">
+                  <Button fx:id="pekao" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="225.0">
                      <graphic>
                         <ImageView fitHeight="64.0" fitWidth="158.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -256,16 +266,16 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="64.0" prefWidth="225.0">
+                  <Button fx:id="pepco" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="57.0" prefWidth="175.0">
                      <graphic>
-                        <ImageView fitHeight="56.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="49.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../resources/Pepco.png" />
                            </image>
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="64.0" prefWidth="225.0">
+                  <Button fx:id="pge" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="225.0">
                      <graphic>
                         <ImageView fitHeight="56.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -274,7 +284,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="64.0" prefWidth="225.0">
+                  <Button fx:id="orlen" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="225.0">
                      <graphic>
                         <ImageView fitHeight="56.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -283,7 +293,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="64.0" prefWidth="225.0">
+                  <Button fx:id="pko" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="225.0">
                      <graphic>
                         <ImageView fitHeight="56.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -292,7 +302,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="64.0" prefWidth="225.0">
+                  <Button fx:id="pzu" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="225.0">
                      <graphic>
                         <ImageView fitHeight="56.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -301,11 +311,20 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="64.0" prefWidth="225.0">
+                  <Button fx:id="santander" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="175.0">
                      <graphic>
                         <ImageView fitHeight="56.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../resources/Santander.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="lpp" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="175.0">
+                     <graphic>
+                        <ImageView fitHeight="56.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../resources/LPP.png" />
                            </image>
                         </ImageView>
                      </graphic>

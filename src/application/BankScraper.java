@@ -84,11 +84,14 @@ public class BankScraper {
     }
 
     // Scraper for WIG information
-    public static void startWIGInformationScraper() {
-        String url = "https://www.bankier.pl/inwestowanie/profile/quote.html?symbol=WIG20";
+    public static void startWIGInformationScraper(String company) {
+        String url = "https://www.bankier.pl/inwestowanie/profile/quote.html?symbol=" + company;
 
         try {
             Document document = Jsoup.connect(url).timeout(10000).get();
+            
+            titleText.clear();
+            valueText.clear();
 
             Elements rows = document.select("tr.startingData");
 
@@ -108,9 +111,9 @@ public class BankScraper {
     }
 
     // Scraper for information to be used in a chart
-    public static void startInformationToChartScraper() {
+    public static void startInformationToChartScraper(String company) {
         try {
-            String url = "https://www.biznesradar.pl/notowania-historyczne/WIG20";
+            String url = "https://www.biznesradar.pl/notowania-historyczne/"+company;
             // Connecting to the website
             Document document = Jsoup.connect(url).timeout(10000).get();
 
