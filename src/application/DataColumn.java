@@ -3,35 +3,40 @@ package application;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import javafx.beans.property.DoubleProperty;
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleDoubleProperty;
+import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
 public class DataColumn {
-	
-	private static Logger logger = LogManager.getLogger(Main.class.getName());
-	
+
+	private static Logger logger = LogManager.getLogger(DataColumn.class.getName());
+
 	private final StringProperty ticker;
 	private final StringProperty name;
-	private final StringProperty package_;
-	private final StringProperty stockRate;
-	private final StringProperty change;
-	private final StringProperty percentageChange;
-	private final StringProperty impact;
-	private final StringProperty portfolioStake;
-	private final StringProperty tradingStake;
+	private final IntegerProperty package_;
+	private final DoubleProperty stockRate;
+	private final DoubleProperty change;
+	private final DoubleProperty percentageChange;
+	private final DoubleProperty impact;
+	private final DoubleProperty tradingStake;
+	private final DoubleProperty portfolioStake;
 
 	// Constructor to initialize DataColumn with data
-	public DataColumn(String name, String ticker, String lastPrice, String change, String percentageChange,
-			String impact, String tradingStake, String package_, String portfolioStake) {
+	public DataColumn(String name, String ticker, Double stockRate, Double change, Double percentageChange,
+			Double impact, Double tradingStake, Integer package_, Double portfolioStake) {
 		this.name = new SimpleStringProperty(name);
 		this.ticker = new SimpleStringProperty(ticker);
-		this.stockRate = new SimpleStringProperty(lastPrice);
-		this.change = new SimpleStringProperty(change);
-		this.percentageChange = new SimpleStringProperty(percentageChange);
-		this.impact = new SimpleStringProperty(impact);
-		this.tradingStake = new SimpleStringProperty(tradingStake);
-		this.package_ = new SimpleStringProperty(package_);
-		this.portfolioStake = new SimpleStringProperty(portfolioStake);
+		this.stockRate = new SimpleDoubleProperty(stockRate);
+		this.change = new SimpleDoubleProperty(change);
+		this.percentageChange = new SimpleDoubleProperty(percentageChange);
+		this.impact = new SimpleDoubleProperty(impact);
+		this.tradingStake = new SimpleDoubleProperty(tradingStake);
+		this.package_ = new SimpleIntegerProperty(package_);
+		this.portfolioStake = new SimpleDoubleProperty(portfolioStake);
+
 		// Logging the creation of a new DataColumn instance
 		logger.debug("Created DataColumn: {}", this);
 	}
@@ -63,93 +68,93 @@ public class DataColumn {
 	}
 
 	// Access methods for package
-	public String getPackage() {
+	public Integer getPackage() {
 		return package_.get();
 	}
 
-	public void setPackage(String package_) {
+	public void setPackage(Integer package_) {
 		this.package_.set(package_);
 	}
 
-	public StringProperty packageProperty() {
+	public IntegerProperty packageProperty() {
 		return package_;
 	}
 
 	// Access methods for stockRate
-	public String getStockRate() {
+	public Double getStockRate() {
 		return stockRate.get();
 	}
 
-	public void setStockRate(String stockRate) {
+	public void setStockRate(Double stockRate) {
 		this.stockRate.set(stockRate);
 	}
 
-	public StringProperty stockRateProperty() {
+	public DoubleProperty stockRateProperty() {
 		return stockRate;
 	}
 
 	// Access methods for change
-	public String getChange() {
+	public Double getChange() {
 		return change.get();
 	}
 
-	public void setChange(String change) {
+	public void setChange(Double change) {
 		this.change.set(change);
 	}
 
-	public StringProperty changeProperty() {
+	public DoubleProperty changeProperty() {
 		return change;
 	}
 
 	// Access methods for percentageChange
-	public String getProcentageChange() {
+	public Double getPercentageChange() {
 		return percentageChange.get();
 	}
 
-	public void setProcentageChange(String procentageChange) {
-		this.percentageChange.set(procentageChange);
+	public void setPercentageChange(Double percentageChange) {
+		this.percentageChange.set(percentageChange);
 	}
 
-	public StringProperty procentageChangeProperty() {
+	public DoubleProperty percentageChangeProperty() {
 		return percentageChange;
 	}
 
 	// Access methods for impact
-	public String getImpact() {
+	public Double getImpact() {
 		return impact.get();
 	}
 
-	public void setImpact(String impact) {
+	public void setImpact(Double impact) {
 		this.impact.set(impact);
 	}
 
-	public StringProperty impactProperty() {
+	public DoubleProperty impactProperty() {
 		return impact;
 	}
 
 	// Access methods for portfolioStake
-	public String getPortfolioStake() {
+	public Double getPortfolioStake() {
 		return portfolioStake.get();
 	}
 
-	public void setPortfolioStake(String portfolioStake) {
+	public void setPortfolioStake(Double portfolioStake) {
 		this.portfolioStake.set(portfolioStake);
 	}
 
-	public StringProperty portfolioStakeProperty() {
+	public DoubleProperty portfolioStakeProperty() {
 		return portfolioStake;
 	}
 
 	// Access methods for tradingStake
-	public String getTradingStake() {
+	public Double getTradingStake() {
 		return tradingStake.get();
 	}
 
-	public void setTradingStake(String tradingStake) {
+	public void setTradingStake(Double tradingStake) {
 		this.tradingStake.set(tradingStake);
 	}
 
-	public StringProperty tradingStakeProperty() {
+	public DoubleProperty tradingStakeProperty() {
 		return tradingStake;
 	}
 

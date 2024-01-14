@@ -21,7 +21,6 @@ public class Main extends Application {
 		try {
 			Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
 			Scene scene = new Scene(root, 600, 400, Color.AZURE);
-			// scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			Image icon = new Image("logo.jpg");
 
 			stage.getIcons().add(icon);
