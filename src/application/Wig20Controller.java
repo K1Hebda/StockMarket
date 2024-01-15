@@ -139,9 +139,9 @@ public class Wig20Controller {
 
 	@FXML
 	private NumberAxis yAxis;
-	
+
 	@FXML
-    private Label companyNameLabel;
+	private Label companyNameLabel;
 
 	public void initialize() {
 		ExecutorService executorService = Executors.newFixedThreadPool(3);
@@ -155,7 +155,7 @@ public class Wig20Controller {
 					executorService);
 			CompletableFuture<Void> tableFuture = CompletableFuture.runAsync(this::fetchDataForTableView,
 					executorService);
-			CompletableFuture<Void> textAreaFuture = CompletableFuture.runAsync(()->fetchDataForTextArea("WIG20"),
+			CompletableFuture<Void> textAreaFuture = CompletableFuture.runAsync(() -> fetchDataForTextArea("WIG20"),
 					executorService);
 			chartFuture.get();
 			tableFuture.get();
@@ -233,6 +233,7 @@ public class Wig20Controller {
 
 	private void fetchDataToChart(String company) {
 		logger.info("Fetching data for chart for company: {}", company);
+
 		BankScraper.startInformationToChartScraper(company);
 		XYChart.Series<String, Number> series = new XYChart.Series<>();
 		yAxis.setAutoRanging(false);
@@ -246,7 +247,6 @@ public class Wig20Controller {
 				logger.error("Error processing data for the chart: {}", e);
 			}
 		}
-
 		// setting the y-axis range
 		yAxis.setLowerBound(Collections.min(BankScraper.chartYValue) - 5);
 		yAxis.setUpperBound(Collections.max(BankScraper.chartYValue) + 5);
@@ -254,122 +254,126 @@ public class Wig20Controller {
 		logger.info("Chart data added successfully for company: {}", company);
 	}
 
-	
 	@FXML
 	private void handleButtonAction(ActionEvent event) {
-		BankScraper.chartXValue.clear();
-		BankScraper.chartYValue.clear();
-		wig20Chart.getData().clear();
-		Button clickedButton = (Button) event.getSource();
-		
-		 logger.info("Button clicked: {}", clickedButton.getId());
+		if (InternetChecker.isInternetReachableUsingPing()) {
+			BankScraper.chartXValue.clear();
+			BankScraper.chartYValue.clear();
+			wig20Chart.getData().clear();
+			Button clickedButton = (Button) event.getSource();
 
-		switch (clickedButton.getId()) {
-		case "alior":
-	        companyNameLabel.setText("ALIOR BANK");
-	        fetchDataToChart("ALIOR-BANK");
-	        fetchDataForTextArea("ALIOR");
-	        break;
-	    case "allegro":
-	        companyNameLabel.setText("ALLEGRO");
-	        fetchDataToChart("ALE");
-	        fetchDataForTextArea("ALLEGRO");
-	        break;
-	    case "asseco":
-	        companyNameLabel.setText("ASSECO POLAND");
-	        fetchDataToChart("ASSECO-POLAND");
-	        fetchDataForTextArea("ASSECOPOL");
-	        break;
-	    case "cdProjekt":
-	        companyNameLabel.setText("CD PROJEKT");
-	        fetchDataToChart("CD-PROJEKT");
-	        fetchDataForTextArea("CDPROJEKT");
-	        break;
-	    case "dino":
-	        companyNameLabel.setText("DINO");
-	        fetchDataToChart("DNP");
-	        fetchDataForTextArea("DINOPL");
-	        break;
-	    case "gk":
-	        companyNameLabel.setText("GRUPA KĘTY");
-	        fetchDataToChart("KETY");
-	        fetchDataForTextArea("KETY");
-	        break;
-	    case "jswaSA":
-	        companyNameLabel.setText("JASTRZĘBSKA SPÓŁKA WĘGLOWA");
-	        fetchDataToChart("JSW-JASTRZEBSKA-SPOLKA-WEGLOWA");
-	        fetchDataForTextArea("JSW");
-	        break;
-	    case "kghm":
-	        companyNameLabel.setText("KGHM POLSKA MIEDZ");
-	        fetchDataToChart("KGHM");
-	        fetchDataForTextArea("KGHM");
-	        break;
-	    case "kruk":
-	        companyNameLabel.setText("KRUK");
-	        fetchDataToChart("KRUK");
-	        fetchDataForTextArea("KRUK");
-	        break;
-	    case "mbank":
-	        companyNameLabel.setText("MBANK");
-	        fetchDataToChart("MBANK");
-	        fetchDataForTextArea("MBANK");
-	        break;
-	    case "orange":
-	        companyNameLabel.setText("ORANGE POLSKA");
-	        fetchDataToChart("ORANGE");
-	        fetchDataForTextArea("ORANGEPL");
-	        break;
-	    case "orlen":
-	        companyNameLabel.setText("PKN ORLEN");
-	        fetchDataToChart("ORLEN");
-	        fetchDataForTextArea("PKNORLEN");
-	        break;
-	    case "pekao":
-	        companyNameLabel.setText("PEKAO, BANK POLSKA KASA OPIEKI");
-	        fetchDataToChart("PEKAO");
-	        fetchDataForTextArea("PEKAO");
-	        break;
-	    case "pepco":
-	        companyNameLabel.setText("PEPCO GROUP");
-	        fetchDataToChart("PCO");
-	        fetchDataForTextArea("PEPCO");
-	        break;
-	    case "pge":
-	        companyNameLabel.setText("PGE, POLSKA GRUPA ENERGETYCZNA");
-	        fetchDataToChart("PGE");
-	        fetchDataForTextArea("PGE");
-	        break;
-	    case "pko":
-	        companyNameLabel.setText("PKO, POWSZECHA KASA OSZCZĘDNOŚCI BANK POLSKI");
-	        fetchDataToChart("PKO");
-	        fetchDataForTextArea("PKOBP");
-	        break;
-	    case "polsat":
-	        companyNameLabel.setText("CYFROWY POLSAT");
-	        fetchDataToChart("CYFROWY-POLSAT");
-	        fetchDataForTextArea("CYFRPLSAT");
-	        break;
-	    case "pzu":
-	        companyNameLabel.setText("PZU, POWSZECHNY ZAKŁAD UBEZPIECZEŃ");
-	        fetchDataToChart("PZU");
-	        fetchDataForTextArea("PZU");
-	        break;
-	    case "santander":
-	        companyNameLabel.setText("SANTANDER BANK POLSKA");
-	        fetchDataToChart("SPL");
-	        fetchDataForTextArea("SANPL");
-	        break;
-	    case "lpp":
-	        companyNameLabel.setText("LPP");
-	        fetchDataToChart("LPP");
-	        fetchDataForTextArea("LPP");
-	        break;
-	    default:
-	        companyNameLabel.setText("Unrecognized Company");
-	        logger.warn("Unrecognized button: {}", clickedButton.getId());
-	        break;
+			logger.info("Button clicked: {}", clickedButton.getId());
 
+			switch (clickedButton.getId()) {
+			case "alior":
+				companyNameLabel.setText("ALIOR BANK");
+				fetchDataToChart("ALIOR-BANK");
+				fetchDataForTextArea("ALIOR");
+				break;
+			case "allegro":
+				companyNameLabel.setText("ALLEGRO");
+				fetchDataToChart("ALE");
+				fetchDataForTextArea("ALLEGRO");
+				break;
+			case "asseco":
+				companyNameLabel.setText("ASSECO POLAND");
+				fetchDataToChart("ASSECO-POLAND");
+				fetchDataForTextArea("ASSECOPOL");
+				break;
+			case "cdProjekt":
+				companyNameLabel.setText("CD PROJEKT");
+				fetchDataToChart("CD-PROJEKT");
+				fetchDataForTextArea("CDPROJEKT");
+				break;
+			case "dino":
+				companyNameLabel.setText("DINO");
+				fetchDataToChart("DNP");
+				fetchDataForTextArea("DINOPL");
+				break;
+			case "gk":
+				companyNameLabel.setText("GRUPA KĘTY");
+				fetchDataToChart("KETY");
+				fetchDataForTextArea("KETY");
+				break;
+			case "jswaSA":
+				companyNameLabel.setText("JASTRZĘBSKA SPÓŁKA WĘGLOWA");
+				fetchDataToChart("JSW-JASTRZEBSKA-SPOLKA-WEGLOWA");
+				fetchDataForTextArea("JSW");
+				break;
+			case "kghm":
+				companyNameLabel.setText("KGHM POLSKA MIEDZ");
+				fetchDataToChart("KGHM");
+				fetchDataForTextArea("KGHM");
+				break;
+			case "kruk":
+				companyNameLabel.setText("KRUK");
+				fetchDataToChart("KRUK");
+				fetchDataForTextArea("KRUK");
+				break;
+			case "mbank":
+				companyNameLabel.setText("MBANK");
+				fetchDataToChart("MBANK");
+				fetchDataForTextArea("MBANK");
+				break;
+			case "orange":
+				companyNameLabel.setText("ORANGE POLSKA");
+				fetchDataToChart("ORANGE");
+				fetchDataForTextArea("ORANGEPL");
+				break;
+			case "orlen":
+				companyNameLabel.setText("PKN ORLEN");
+				fetchDataToChart("ORLEN");
+				fetchDataForTextArea("PKNORLEN");
+				break;
+			case "pekao":
+				companyNameLabel.setText("PEKAO, BANK POLSKA KASA OPIEKI");
+				fetchDataToChart("PEKAO");
+				fetchDataForTextArea("PEKAO");
+				break;
+			case "pepco":
+				companyNameLabel.setText("PEPCO GROUP");
+				fetchDataToChart("PCO");
+				fetchDataForTextArea("PEPCO");
+				break;
+			case "pge":
+				companyNameLabel.setText("PGE, POLSKA GRUPA ENERGETYCZNA");
+				fetchDataToChart("PGE");
+				fetchDataForTextArea("PGE");
+				break;
+			case "pko":
+				companyNameLabel.setText("PKO, POWSZECHA KASA OSZCZĘDNOŚCI BANK POLSKI");
+				fetchDataToChart("PKO");
+				fetchDataForTextArea("PKOBP");
+				break;
+			case "polsat":
+				companyNameLabel.setText("CYFROWY POLSAT");
+				fetchDataToChart("CYFROWY-POLSAT");
+				fetchDataForTextArea("CYFRPLSAT");
+				break;
+			case "pzu":
+				companyNameLabel.setText("PZU, POWSZECHNY ZAKŁAD UBEZPIECZEŃ");
+				fetchDataToChart("PZU");
+				fetchDataForTextArea("PZU");
+				break;
+			case "santander":
+				companyNameLabel.setText("SANTANDER BANK POLSKA");
+				fetchDataToChart("SPL");
+				fetchDataForTextArea("SANPL");
+				break;
+			case "lpp":
+				companyNameLabel.setText("LPP");
+				fetchDataToChart("LPP");
+				fetchDataForTextArea("LPP");
+				break;
+			default:
+				companyNameLabel.setText("Unrecognized Company");
+				logger.warn("Unrecognized button: {}", clickedButton.getId());
+				break;
+			}
+		} else {
+			if (InternetChecker.errorScene()) {
+				handleButtonAction(event);
+			}
 		}
 	}
 

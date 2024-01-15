@@ -43,19 +43,8 @@ public class SceneController {
                 logger.error("Unexpected error while switching to WIG20 scene", e);
             }
         } else {
-            // Display an informational window about the lack of Internet access
-            Alert alert = new Alert(AlertType.ERROR);
-            alert.setTitle("Błąd");
-            alert.setHeaderText("Brak dostępu do internetu");
-            alert.setContentText("Sprawdz swoje połączenie.");
-
-            // Add a "Try Again" button
-            ButtonType tryAgainButton = new ButtonType("Spróbuj ponownie");
-            alert.getButtonTypes().setAll(tryAgainButton, ButtonType.CANCEL);
-
-            // Event handling for the "Try Again" button
-            Optional<ButtonType> result = alert.showAndWait();
-            if (result.isPresent() && result.get() == tryAgainButton) {
+           
+            if (InternetChecker.errorScene()) {
                 switchToWIG20(event);
             }
         }
