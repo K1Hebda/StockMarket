@@ -40,7 +40,7 @@ public class InternetChecker {
         alert.setHeaderText("Brak dostępu do internetu");
         alert.setContentText("Sprawdz swoje połączenie.");
 
-        // Add a "Try Again" button
+        // "Try Again" button
         ButtonType tryAgainButton = new ButtonType("Spróbuj ponownie");
         alert.getButtonTypes().setAll(tryAgainButton, ButtonType.CANCEL);
 

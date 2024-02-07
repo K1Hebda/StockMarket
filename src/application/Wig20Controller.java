@@ -233,7 +233,10 @@ public class Wig20Controller {
 
 	private void fetchDataToChart(String company) {
 		logger.info("Fetching data for chart for company: {}", company);
-
+		//clearing chart
+		BankScraper.chartXValue.clear();
+		BankScraper.chartYValue.clear();
+		wig20Chart.getData().clear();
 		BankScraper.startInformationToChartScraper(company);
 		XYChart.Series<String, Number> series = new XYChart.Series<>();
 		yAxis.setAutoRanging(false);
@@ -256,14 +259,12 @@ public class Wig20Controller {
 
 	@FXML
 	private void handleButtonAction(ActionEvent event) {
+		//checking connectivity 
 		if (InternetChecker.isInternetReachableUsingPing()) {
-			BankScraper.chartXValue.clear();
-			BankScraper.chartYValue.clear();
-			wig20Chart.getData().clear();
 			Button clickedButton = (Button) event.getSource();
 
 			logger.info("Button clicked: {}", clickedButton.getId());
-
+			//changing chart and text when user put the button
 			switch (clickedButton.getId()) {
 			case "alior":
 				companyNameLabel.setText("ALIOR BANK");
@@ -372,18 +373,20 @@ public class Wig20Controller {
 			}
 		} else {
 			if (InternetChecker.errorScene()) {
+				// While the user clicks the "try again" button, the method is invoked
 				handleButtonAction(event);
 			}
 		}
 	}
 
+	// Method to switch the scene to Main
 	public void switchToMain(ActionEvent event) {
 		logger.info("Switching to the Main scene");
 		try {
 			BankScraper.ListOfCompanies.clear();
 			logger.debug("Clearing ListOfCompanies");
 
-			// Loading the Main.fxml file and switch to the Main scene
+			// Loading the Main.fxml file and switching to the Main scene
 			root = FXMLLoader.load(getClass().getResource("Main.fxml"));
 			stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 			scene = new Scene(root);
